@@ -1,0 +1,277 @@
+#{
+  box-sizing: border-box;
+}
+body {
+  padding-top: 50px;
+}
+
+nav a {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+  font-size: 18px;
+}
+
+nav .navbar-toggle {
+  margin: 13px 15px 13px 0;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  height: auto;;
+}
+
+.navbar-fixed-top, .navbar-fixed-bottom{
+  z-index: 100;
+}
+
+nav.navbar.shrink {
+  min-height: 35px;
+}
+
+nav.shrink a {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  font-size: 15px;
+}
+
+nav.shrink .navbar-brand {
+  font-size: 25px;
+}
+
+nav.shrink .navbar-toggle {
+  padding: 4px 5px;
+  margin: 8px 15px 8px 0;
+}
+
+
+/* notification widget */
+
+
+div.alert-box::after{
+  position: absolute;
+  top: -8px;
+  right : 35px;
+  display: inline-block;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #e0e0e0;
+  border-left: 7px solid transparent;
+  content: '';
+  z-index: 500;
+}
+
+.notification-bubble {
+    background-color: #ff5a5f;
+    display: inline;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    right: -3px;
+    top: 12px;
+    color: #fff;
+    text-align: center;
+    font-size: 9px;
+    line-height: 18px;
+}
+.alert-box{
+  color: #0c0c0c;
+  position: fixed;
+  top :61px;
+  right: 150px;
+  z-index: 998;
+  min-width: 175px;
+  display: none;
+}
+.alert-box-inner{
+  border-radius: 4px;
+  border: 1px solid #d6d6d6;
+  border-top: 0;
+  text-align: center;
+}
+.alert-box .alert-box-inner .alert-head{
+    border: 1px solid #ddd;
+    padding: 5px 15px;
+    background-color: #e0e0e0;
+    text-align: center;
+    width: 100%;
+}
+.alert-box .alert-box-inner a{
+  color: #0c0c0c;
+  text-decoration: none;
+  padding-top: 5px !important;
+  padding-bottom : 5px !important;
+  border-radius: 50%;
+}
+#close_noti span{
+      border: 1px solid #ff0000;
+      border-radius: 50%;
+      width: 25px;
+      height: 20px;
+      padding: 1px 5px;
+      color : #ff0000;
+}
+#close_noti span:hover{
+      color : #ffffff;
+      background-color: #ff0000;
+      cursor: pointer;
+}
+
+
+.alert-box .alert-box-inner .alert-head a{
+   position: absolute;
+   float: right;
+   right: 12px;
+    top: 1px;
+    color: #777;
+    padding: 0;
+}
+.alert-box .alert-box-inner .alert-body{
+  width: 100%;
+  background-color: white;
+}
+.alert-box .alert-box-inner .alert-body i{
+  color:#ff0000;
+}
+.alert-box .alert-box-inner .alert-body ul{
+  width: 100%;
+  padding-top: 5px;
+  display: table;
+  margin-bottom: 5px;
+  /* for removing bullets */
+  list-style-type: none !important;
+  /* */
+  /* above will remove space but not space, for removing space of bulltes*/
+  margin:0;
+  padding:10px 10px;
+  /* */
+}
+.alert-box .alert-box-inner .alert-body  li{
+  border-right: 1px solid #dedede;
+  padding-right: 8px;
+  padding-left: 5px;
+  display: table-cell;
+  width: 94px;
+
+}
+.alert-box .alert-box-inner .alert-body  li:last-child{
+  border-right: none;
+}
+
+.alert-box .alert-box-inner .alert-body .alert-sec a{
+  display: block;
+}
+.alert-box .alert-box-inner .alert-body .alert-sec .alert-list  span.icons{
+  display: inline-block ;
+  font-size: 30px;
+}
+.alert-box .alert-box-inner .alert-body .alert-sec .alert-list  span.ic-description {
+  display: block ;
+  font-size: 12px;
+}
+
+@media (min-width: 1905px) {
+  .container {
+    width: 1850px;
+  }
+  .alert-box{
+    top :61px;
+    right:20px;
+  }
+  .alert-box::after{
+    right: 6px;
+  }
+}
+
+
+/* size selection div*/
+.category{
+  width: 100%;
+  text-align: center;
+}
+
+.category ul{
+  list-style-type: none;
+  display: inline-flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.category a{
+    text-decoration: none;
+}
+.category li>a{
+    border: 1px solid #c2c2c2;
+    border-radius: 50%;
+    width: 38px;
+    height: auto;
+    margin-right: 10px;
+    background-color: #fff;
+    padding: 10px 5px;
+    color: #dedede;
+    display: block;
+    font-size: 12px;
+}
+.category a:hover{
+  background-color: #2c4152;
+  color : #fff;
+}
+.category a:hover div.popupdialog{
+  display: block;
+}
+
+/*
+.category ul li:nth-child(2) a{
+  color: #ff0000;
+  font-size: calc(30-n);
+}
+.category ul li:nth-child(3) a{
+  color: #ff0000;
+  font-size: calc(30-n);
+}
+.category ul li:nth-child(4) a{
+  color: #ff0000;
+  font-size: calc(30-n);
+}
+*/
+
+.category a:nth-child(2) + a:hover popupdialog{
+  margin-left: -75px;
+}
+
+.category .popupdialog{
+    /*display: none;*/
+    width: 176px;
+    position: absolute;
+    font-size: 14px;
+    border: 1.5px solid #c2c2c2;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 45px;
+    margin-left: -115px;
+    background:  #fff;
+    box-shadow: 0px 4px 11px  #c2c2c2;
+                //first px shift from left to right:
+                //second px shift from top to bottom
+                //third px increase blurring
+}
+.category .popupdialog hr{
+  padding: 2px;
+  margin: 1px;
+}
+
+div.popupdialog::after{
+  position: absolute;
+  top: -8px;
+  right : 35px;
+  display: inline-block;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #e0e0e0;
+  border-left: 7px solid transparent;
+  content: '';
+  z-index: 500;
+}
+.category .popupdialog .header{
+  color : #2c4152;
+  font-weight: 600;
+}
