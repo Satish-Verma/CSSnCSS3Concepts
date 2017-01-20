@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Animation Practice</title>
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <section>
+        <h3>Scaling Transformation</h3>
+        <div class="scaling">
+          <span style="text">GREAT</span>
+          <br>
+          You Solved it!!
+        </div>
+    </section>
+    <hr>
+    <section>
+      <h3>Rotation Transformation</h3>
+      <div class="rotate">
+        <div class="rotate_plus90">
+          <span style="text">GREAT +90</span>
+
+        </div>
+        <div class="rotate_minus90">
+          <span style="text">GREAT -90</span>
+
+        </div>
+        <div class="rotate_180">
+          <span style="text">GREAT +180</span>
+
+        </div>
+        <div class="rotate_360">
+          <span style="text">GREAT +360</span>
+
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <div class="fading float_div">
+        <div class="">
+          <h3>Transition-WithAnimation_linear-FadeIn</h3>
+          <div class="transitionAll">
+          </div>
+        </div>
+      <div class="">
+        <h3>Transition-WithAnimation_cubicBeizer-FadeIn</h3>
+        <div class="fadein">
+        </div>
+      </div>
+      <div class="">
+        <h3>Transition-WithAnimation_cubicBeizer-FadeOut</h3>
+        <div class="fadeOut">
+        </div>
+      </div>
+
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h3>Last In, First Out CSS Transitions</h3>
+      <button class="c-btn">Toggle</button>
+        <div class="c-bars">
+          <span class="c-bars__bar">1</span>
+          <span class="c-bars__bar">2</span>
+          <span class="c-bars__bar">3</span>
+          <span class="c-bars__bar">4</span>
+          <span class="c-bars__bar">5</span>
+        </div>
+    </section>
+    <hr>
+    <section>
+      <h3>Transition-Transformas-Animation-Flipping Card</h3>
+      <div  class="float_div">
+        <div class="card effect__EFFECT">
+            <div class="card__front">
+              <span class="card__text">front</span>
+            </div>
+            <div class="card__back">
+              <span class="card__text">back</span>
+            </div>
+        </div><!-- /card -->
+        <div class="card effect__EFFECT">
+            <div class="card__front">
+              <span class="card__text">front</span>
+            </div>
+            <div class="card__back">
+              <span class="card__text">back</span>
+            </div>
+        </div><!-- /card -->
+      </div>
+
+    </section>
+    <hr>
+    <section>
+          <h3>Square Rotated About y-Axis On Hover (Perspective Related Concept)</h3>
+          <div class="float_div">
+
+            <div class="perspective-container perspective--none">
+                <span class="surface">
+                  square (No Perspective)
+                </span>
+            </div>
+
+            <div class="perspective-container perspective--400">
+              <span class="surface">
+                square <br>(400px perspective, default origin)
+              </span>
+            </div>
+
+            <div class="perspective-container perspective--400 perspective-origin--00">
+              <span class="surface">
+                square <br>(400px perspective, [0 0] origin)
+              </span>
+            </div>
+          </div>
+    </section>
+    <hr>
+    <section>
+         <h1><u>Spinning Cubes with transform and perspective use</u></h1>
+         <h4>link: (http://callmenick.com/post/css-transitions-transforms-animations-perspective)</h4>
+          <div class="wrap">
+              <h1>1. Rotating Cube to x-axis</h1>
+              <div id="cube" class="cube rotate-x">
+                <span class="face front">front</span>
+                <span class="face back">back</span>
+                <span class="face top">top</span>
+                <span class="face bottom">bottom</span>
+                <span class="face left">left</span>
+                <span class="face right">right</span>
+              </div>
+          </div>
+          <div class="wrap">
+            <h1>2. Rotating Cube to x-axis</h1>
+              <div id="cube" class="cube rotate-y">
+                <span class="face front">front</span>
+                <span class="face back">back</span>
+                <span class="face top">top</span>
+                <span class="face bottom">bottom</span>
+                <span class="face left">left</span>
+                <span class="face right">right</span>
+              </div>
+          </div>
+    </section>
+    <hr>
+    <section>
+            <div class="weather_icons">
+              <div icon="sunny" data-label="Sunny">
+                  <span class="sun"></span>
+              </div>
+
+              <div icon="cloudy" data-label="Perfect">
+                <span class="cloud"></span>
+                <span class="cloud"></span>
+              </div>
+
+              <div icon="snowy" data-label="Chilly">
+                <span class="snowman"></span>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+
+              <div icon="stormy" data-label="Soggy">
+                <span class="cloud"></span>
+                <ul>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                  <li></li>
+                </ul>
+              </div>
+
+              <div icon="supermoon" data-label="Cool!">
+                <span class="moon"></span>
+                <span class="meteor"></span>
+              </div>
+            </div>
+    </section>
+    <hr>
+    <section >
+      <h1>Making Hover Animated Border with box-shadow in ::after of div</h1>
+      <div class="nav__border">
+        <a href="#">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Technology</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+      </div>
+    </section>
+    <hr>
+    <section>
+      <h1>Hover on circle to get Animated Title</h1>
+      <h3>(Color changes as the outer-div/section color)</h3>
+        <div class="getCircle">
+          <div class="core-title">
+                <h3>Pioneering</h3>
+          </div>
+
+        </div>
+        <div class="getCircle">
+          <div class="core-title">
+                <h3>Humility</h3>
+          </div>
+        </div>
+          <div class="getCircle">
+            <div class="core-title">
+                  <h3>Imagination</h3>
+            </div>
+
+          </div>
+          <div class="getCircle">
+            <div class="core-title">
+                  <h3>Craftshmanship</h3>
+            </div>
+          </div>
+        </div>
+    </section>
+    <hr>
+    <section class="sonar_hover">
+      <h2>Hover on circles to get animation:</h2>
+      <div class="hi-icon-wrap hi-icon-effect-8">
+					<span class="hi-icon hi-icon-biz" style="background-color:#F9D092"><h5>Business  owner</h5></span>
+					<span class="hi-icon hi-icon-seo" style="background-color:#A13636"><h5>SEO Expert</h5></span>
+					<span class="hi-icon hi-icon-ind" style="background-color:#29A79C"><h5>Individual</h5></span>
+					<span class="hi-icon hi-icon-online" style="background-color:#0E7C97"><h5>Web Developer</h5></span>
+					<span class="hi-icon hi-icon-snm" style="background-color:#6DDA9F"><h5>Enterprise</h5></span>
+					<span class="hi-icon hi-icon-house" style="background-color:#FFF29C"><h5>Housewife</h5></span>
+					<span class="hi-icon hi-icon-blog" style="background-color:#BFECFF"><h5>Blogger</h5></span>
+				</div>
+    </section>
+    <section class="sonar_hover_black">
+        <div class="hi-icon-wrap hi-icon-effect-8">
+          <a href="#set-8" class="hi-icon hi-icon-archive">Archive</a>
+          <a href="#set-8" class="hi-icon hi-icon-chat">Chat</a>
+          <a href="#set-8" class="hi-icon hi-icon-bookmark">Bookmarks</a>
+          <a href="#set-8" class="hi-icon hi-icon-user">User</a>
+          <a href="#set-8" class="hi-icon hi-icon-contract">Contact</a>
+          <a href="#set-8" class="hi-icon hi-icon-contract">Blog</a>
+          <a href="#set-8" class="hi-icon hi-icon-contract">Directory</a>
+        </div>
+    </section>
+
+    <hr>
+    <section>
+      ...
+    </section>
+  </body>
+  <script>
+  var btn = document.querySelector('.c-btn');
+  var bars = document.querySelectorAll('.c-bars__bar');
+
+  btn.addEventListener('click', function() {
+    for (var i = 0; i < bars.length; i++) {
+      bars[i].classList.toggle('is-expanded');
+    }
+  });
+</script>
+</html>
